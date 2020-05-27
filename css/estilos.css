@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*------------ Variables */
+:root{
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+
+    /* Tipografia */
+    --normal:12px;
+
+    /* Espaciado */
+    --space:10px;
+    --space-2:20px;
+
+    /* Box shadow */
+    --box:0px 0 2px 1px #e6e5e9;  
+
+}
+/*------------ Variables */
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    /* font-size: var(--normal); */
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black-color);
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+label{
+    padding-bottom: var(--space);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space);
+    min-height: 60px;
+    background-color: var(--green-color);
+    
+    /* color: var(--white-color); */
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--normal);
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+    
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+
+}
+
+hr{
+  opacity: .2;
+}
+
+/* ----------------------------- MAIN SECTION */
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+
+/*-------------------------------- PRODUCTS */
+.products{
+    background-image: url("../images/curve.png");
+    padding: 15%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 95px;
+    background-size: cover;
+    
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow: var(--box);
+}
+
+
+
+.img_content{
+    text-align: center;
+}
+
+
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
+}
+
+/* BENEFICIOS */
+.beneficios{
+    padding: 10px;
+    display: flex;
+}
+
+.beneficio{
+    text-align: center;
+    padding: 20px;
+}
+
+.beneficio img{
+    max-height: 100px;
+}
+
+.text_beneficio{
+    text-align: justify;
+}
+
+/* MENTIONS */
+
+.mentions{
+    display: flex;
+    padding: 5%;
+}
+
+.mention img{
+    width: 100%;
+}
+
+h2.mention_title{
+    text-align: center;
+}
+
+.mention{
+    padding: var(--space);
+}
+
+.content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+    
+}
+
+.mention .text{
+    padding: var(--space);
+}
+
+/* VENTA */
+
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space-2);
+
+}
+
+.modulo_pago_images{
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color:var(--white-color);
+}
+
+.contact a{
+    color: var(--green-color);
+}
